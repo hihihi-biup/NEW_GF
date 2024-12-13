@@ -1,16 +1,47 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "PlatformIO",
             "includePath": [
-                "${workspaceFolder}/**"
+                "D:/daima/Embedded system/STM32/project/NEW_GF",
+                "D:/daima/Embedded system/STM32/project/NEW_GF/Core/Inc",
+                "D:/daima/Embedded system/STM32/project/NEW_GF/Drivers/CMSIS/Include",
+                "D:/daima/Embedded system/STM32/project/NEW_GF/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+                "D:/daima/Embedded system/STM32/project/NEW_GF/Drivers/STM32F4xx_HAL_Driver/Inc",
+                "D:/daima/Embedded system/STM32/project/NEW_GF/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+                ""
             ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "D:/daima/Embedded system/STM32/project/NEW_GF",
+                    "D:/daima/Embedded system/STM32/project/NEW_GF/Core/Inc",
+                    "D:/daima/Embedded system/STM32/project/NEW_GF/Drivers/CMSIS/Include",
+                    "D:/daima/Embedded system/STM32/project/NEW_GF/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+                    "D:/daima/Embedded system/STM32/project/NEW_GF/Drivers/STM32F4xx_HAL_Driver/Inc",
+                    "D:/daima/Embedded system/STM32/project/NEW_GF/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+                    ""
+                ]
+            },
             "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
+                "F_CPU=168000000L",
+                "PLATFORMIO=60116",
+                "STM32F407xx",
+                "STM32F4",
+                "STM32F407VGT",
+                ""
             ],
-            "cStandard": "c99"
+            "compilerPath": "C:/Users/l'r'b/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+                "-mthumb",
+                "-mcpu=cortex-m4",
+                ""
+            ]
         }
     ],
     "version": 4
