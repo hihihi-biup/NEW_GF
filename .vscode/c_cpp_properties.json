@@ -32,6 +32,7 @@
                 "F_CPU=168000000L",
                 "PLATFORMIO=60116",
                 "STM32F407xx",
+                "ARDUINO_STM32GenericF407VET6",
                 "STM32F4",
                 "STM32F407VGT",
                 ""
