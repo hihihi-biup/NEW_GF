@@ -2664,3 +2664,23 @@ void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p)
     }  
 }
 
+
+/************************** LCD显示图片函数 *******************************************
+函数功能：显示自定义显示图片大小
+*x,y:      图片起始坐标
+*Pic_x,y:  图片大小 
+*p：       显示的图片
+*************************************************************************************/
+void LCD_Show_Picture(uint32_t x,uint32_t y,uint32_t Pic_x,uint32_t Pic_y,const unsigned char * p)
+{ 
+	uint32_t i,j;   
+	for(j = 0; j < Pic_y; j++)
+	 { 
+		 for(i = 0; i < Pic_x; i++)
+			{ 
+				 LCD_Fast_DrawPoint(x+i,y+j,(*p<<8)+*(p+1)); 
+				//画点LCD的像素是16位的，所以需要将2个8位像素合成16位像素。
+				 p += 2;
+			}
+	 }
+}

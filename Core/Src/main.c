@@ -30,6 +30,7 @@
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
 #include "LCD.h"
+#include "servo.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -97,6 +98,8 @@ int main(void)
   MX_TIM2_Init();
   MX_FSMC_Init();
   /* USER CODE BEGIN 2 */
+  servo_init();
+
   LCD_Init();
   LCD_DisplayOn();
   HAL_Delay(1);

@@ -5,4 +5,7 @@
 #include "adc.h"
 #include "main.h"
 
+void servo_init(void);
+void servo_test(void);
+
 #endif

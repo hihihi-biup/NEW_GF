@@ -251,6 +251,7 @@ void LCD_WriteRAM(u16 RGB_Code);
 void LCD_Scan_Dir(u8 dir);							//设置屏扫描方向
 void LCD_Display_Dir(u8 dir);						//设置屏幕显示方向
 void LCD_Set_Window(u16 sx,u16 sy,u16 width,u16 height);//设置窗口		
+void LCD_Show_Picture(uint32_t x,uint32_t y,uint32_t Pic_x,uint32_t Pic_y,const unsigned char * p)
 //void 		LCD_ReadId			(void);
 //uint16_t	LCD_RD_DATA			(void);
 //void		LCD_WR_REG			(uint16_t regval);
