@@ -24,10 +24,12 @@
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
+#include "fsmc.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
+#include "LCD.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -93,16 +95,22 @@ int main(void)
   MX_ADC2_Init();
   MX_USART2_UART_Init();
   MX_TIM2_Init();
+  MX_FSMC_Init();
   /* USER CODE BEGIN 2 */
+  LCD_Init();
+  LCD_DisplayOn();
   HAL_Delay(1);
   /* USER CODE END 2 */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     HAL_GPIO_WritePin(LED2_GPIO_Port,LED2_Pin,GPIO_PIN_SET);
-    printf("111");
+    //HAL_UART_Transmit(&huart2,"11/r/n",2,0xff);
+    LCD_Fill(1,1,20,20,BLACK);
     /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
     HAL_GPIO_WritePin(LED2_GPIO_Port,LED2_Pin,GPIO_PIN_RESET);
   }
