@@ -16,6 +16,7 @@
                 "D:/daima/Embedded system/STM32/project/NEW_GF/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
                 "D:/daima/Embedded system/STM32/project/NEW_GF/HardWare/servo",
                 "D:/daima/Embedded system/STM32/project/NEW_GF/HardWare/LCD",
+                "D:/daima/Embedded system/STM32/project/NEW_GF/FilteredWaveform",
                 ""
             ],
             "browse": {
@@ -29,6 +30,7 @@
                     "D:/daima/Embedded system/STM32/project/NEW_GF/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
                     "D:/daima/Embedded system/STM32/project/NEW_GF/HardWare/servo",
                     "D:/daima/Embedded system/STM32/project/NEW_GF/HardWare/LCD",
+                    "D:/daima/Embedded system/STM32/project/NEW_GF/FilteredWaveform",
                     ""
                 ]
             },
